@@ -1,0 +1,13 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Build
+out/
+target/
+
+# Compilados
+*.class
+
+# Sistema
+.DS_Store
