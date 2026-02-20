@@ -1,4 +1,4 @@
-package lvl_intermediary.training.Arrays;
+package lvl_intermediary.training.arrays;
 
 public class ArrayMedia {
     public static void main(String[] args) {

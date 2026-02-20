@@ -1,4 +1,4 @@
-package lvl_intermediary.training.Arrays;
+package lvl_intermediary.training.arrays;
 
 public class ArrayMaxMin {
     public static void main(String[] args) {
