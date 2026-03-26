@@ -51,13 +51,16 @@ public class BankAccount {
     }
 
 
-    // Retorna o saldo atual da conta ( não exibe, apenas retorna )
+    // Getter: Retorna o saldo atual da conta ( não exibe, apenas retorna )
     public double getBalance() {
         return balance;
     }
 
+    public String getOwner() {
+        return owner;
+    }
 
-    // Metodo para definir novo valor à taxa
+    // Setter: Metodo para definir novo valor à taxa
     public void setWithdrawRate(double withdrawRate) {
         if (withdrawRate < 0) {
             System.out.println("Valor de taxa inválido!");
