@@ -3,9 +3,12 @@ package exercices.basics.simplebank_system;
 public class Main {
     public static void main(String[] args) {
 
-        BankAccount acc1 = new BankAccount("Sergio", 2312, 1008.9);
-        acc1.getBalance();
-        acc1.deposit(500);
+        BankAccount acc1 = new BankAccount("Sergio", 2312, 100);
+
+        System.out.println("===================================");
         acc1.withdraw(200);
+
+        System.out.println("===================================");
+        acc1.printAccountData();
     }
 }

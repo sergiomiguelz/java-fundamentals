@@ -25,7 +25,6 @@ public class BankAccount {
         this.balance = balance;
     }
 
-
     // Metodo para depositar valor à conta
     public void deposit(double amount) {
         if (amount <= 0) {
@@ -33,7 +32,7 @@ public class BankAccount {
             return;
         }
         balance += amount;
-        System.out.println("Valor depositado com sucesso!\n" + "Saldo atual: " + balance);
+        System.out.printf("Valor de R$%.2f depositado com sucesso!\nSaldo atual: R$%.2f\n", amount, balance);
     }
 
 
@@ -44,11 +43,11 @@ public class BankAccount {
             return;
         }
         if (balance < amount + withdrawRate) {
-            System.out.println("Valor indisponível para seu saldo!\n" + "Seu saldo: R$" + balance);
+            System.out.printf("Valor indisponível para seu saldo atual!\nSaldo atual: R$%.2f\n", balance);
             return;
         }
         balance -= (amount + withdrawRate);
-        System.out.println("Saque realizado com sucesso!\n" + "Saldo atual: R$" + balance);
+        System.out.printf("Saque realizado com sucesso!\nSaldo atual: R$%.2f\n", balance);
     }
 
 
@@ -70,6 +69,6 @@ public class BankAccount {
 
     // Metodo para printar as informacoes da conta
     public void printAccountData() {
-        System.out.println("Titular: " + owner + "\nConta: " + accountNumber + "\nSaldo: R$" + balance);
+        System.out.printf("Titular: %s | Conta: %d | Saldo: R$%.2f\n", owner, accountNumber, balance);
     }
 }
