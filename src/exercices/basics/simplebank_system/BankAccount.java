@@ -50,17 +50,22 @@ public class BankAccount {
         System.out.printf("Saque realizado com sucesso!\nSaldo atual: R$%.2f\n", balance);
     }
 
-
-    // Getter: Retorna o saldo atual da conta ( não exibe, apenas retorna )
-    public double getBalance() {
-        return balance;
-    }
-
+    // Getter para Titular da conta
     public String getOwner() {
         return owner;
     }
 
-    // Setter: Metodo para definir novo valor à taxa
+    // Getter para numero da conta
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    // Getter para o saldo atual da conta
+    public double getBalance() {
+        return balance;
+    }
+
+    // Setter para definir novo valor à taxa
     public void setWithdrawRate(double withdrawRate) {
         if (withdrawRate < 0) {
             System.out.println("Valor de taxa inválido!");
