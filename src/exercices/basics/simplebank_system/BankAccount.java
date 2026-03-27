@@ -43,7 +43,7 @@ public class BankAccount {
             return;
         }
         if (balance < amount + withdrawRate) {
-            System.out.printf("Valor indisponível para seu saldo atual!\nSaldo atual: R$%.2f\n", balance);
+            System.out.printf("Saldo insuficiente para realizar o saque.\nSaldo atual: R$%.2f\n", balance);
             return;
         }
         balance -= (amount + withdrawRate);
