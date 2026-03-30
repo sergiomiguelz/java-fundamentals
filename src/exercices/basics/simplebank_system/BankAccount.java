@@ -47,7 +47,7 @@ public class BankAccount {
             return;
         }
         balance -= (amount + withdrawRate);
-        System.out.printf("Saque realizado com sucesso!\nSaldo atual: R$%.2f\n", balance);
+        System.out.printf("Saque de R$%.2f realizado com sucesso!\nSaldo atual: R$%.2f\n", amount, balance);
     }
 
     // Getter para Titular da conta
