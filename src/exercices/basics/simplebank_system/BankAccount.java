@@ -32,7 +32,7 @@ public class BankAccount {
             return;
         }
         balance += amount;
-        System.out.printf("Valor de R$%.2f depositado com sucesso!\nSaldo atual: R$%.2f\n", amount, balance);
+        System.out.printf("Depósito de R$%.2f realizado com sucesso!\nSaldo atual: R$%.2f\n", amount, balance);
     }
 
 
