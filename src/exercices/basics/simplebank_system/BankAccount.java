@@ -67,7 +67,7 @@ public class BankAccount {
 
     // Setter para definir novo valor à taxa
     public void setWithdrawRate(double withdrawRate) {
-        if (withdrawRate < 0) {
+        if (withdrawRate < 0 || withdrawRate > 100) {
             System.out.println("Valor de taxa inválido!");
             return;
         }
