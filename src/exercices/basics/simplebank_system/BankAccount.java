@@ -38,8 +38,8 @@ public class BankAccount {
 
     // Metodo para sacar o dinheiro
     public void withdraw(double amount) {
-        if (amount <= 0) {
-            System.out.println("Você não pode sacar um valor negativo ou nulo! Tente Novamente.");
+        if (amount <= 0 || amount > 10000) {
+            System.out.println("Valor de depósito inválido!");
             return;
         }
         if (balance < amount + withdrawRate) {
