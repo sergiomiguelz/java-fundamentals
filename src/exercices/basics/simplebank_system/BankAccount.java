@@ -5,7 +5,8 @@ public class BankAccount {
     private String owner;
     private int accountNumber;
     private double balance;
-    private double withdrawRate = 5;
+    private static final double DEFAULT_WITHDRAW_RATE = 5;
+    private double withdrawRate = DEFAULT_WITHDRAW_RATE;
 
 
     // Constructor que garante que a conta seja criada apenas com dados válidos
