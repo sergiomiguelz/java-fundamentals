@@ -18,9 +18,9 @@ public class ArrayListNinjas {
 
         // Percorrendo o ArrayList e imprimindo cada elemento
         System.out.println("Quantidade total de ninjas: " + ArrayNinjas.size());
-        System.out.println("Ninjas: ");
-        for (String ninjas : ArrayNinjas){
-            System.out.println(ninjas);
+        System.out.println("Lista de Ninjas: ");
+        for (String ninja : ArrayNinjas){
+            System.out.println(ninja);
         }
 
         System.out.println("---------------------");
