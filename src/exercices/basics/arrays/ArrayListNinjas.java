@@ -1,4 +1,5 @@
 package exercices.basics.arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ArrayListNinjas {
@@ -6,7 +7,7 @@ public class ArrayListNinjas {
         /*Praticando ArrayList*/
 
         // Instanciando o ArrayList
-        List<String> ArrayNinjas = new java.util.ArrayList<>();
+        List<String> ArrayNinjas = new ArrayList<>();
 
         // Adicionando elementos no ArrayList
         ArrayNinjas.add("Naruto");
@@ -38,6 +39,21 @@ public class ArrayListNinjas {
                 System.out.println(ninjas);
             }
         }
+
+        System.out.println("---------------------");
+
+        /* Desafio extra: Criar nova lista e adicionar nela os ninjas que possuem nome com +de 5 letras */
+
+        // Instanciando nova lista
+        List<String> aprovados = new ArrayList<>();
+
+        // Percorrendo a lista, verificando se ele possui nome com +de 5 letras e imprimindo
+        for (String ninja: ArrayNinjas){
+            if(ninja.length() > 5){
+                aprovados.add(ninja);
+            }
+        }
+        System.out.println(aprovados);
 
     }
 }
