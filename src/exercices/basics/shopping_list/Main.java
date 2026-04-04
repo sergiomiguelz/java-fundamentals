@@ -9,35 +9,45 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
+
+        // Criação da lista de compras
         List<String> listaCompras = new ArrayList<>();
 
+        // Adicionando itens na lista
         listaCompras.add("Leite");
         listaCompras.add("Maçã");
         listaCompras.add("Pão");
         listaCompras.add("Ovo");
         listaCompras.add("Queijo");
 
-        System.out.println("Tamanho da lista de compras : " + listaCompras.size());
-
-        for (int i = 0; i < listaCompras.size(); i++) {
-            System.out.println((i+1) + " - " + listaCompras.get(i));
-        }
+        // Exibindo tamanho e itens da lista
+        System.out.println("Tamanho da lista de compras: " + listaCompras.size());
+        exibirLista(listaCompras);
 
         System.out.println("-------------------------");
 
+        // Removendo item pelo índice (posição 2 = "Pão")
         listaCompras.remove(2);
-        System.out.println("Tamanho da lista de compras : " + listaCompras.size());
 
-        for (int i = 0; i < listaCompras.size(); i++) {
-            System.out.println((i+1) + " - " + listaCompras.get(i));
-        }
+        // Exibindo lista atualizada
+        System.out.println("Tamanho da lista de compras: " + listaCompras.size());
+        exibirLista(listaCompras);
 
+        System.out.println("-------------------------");
+
+        // Verificando se um item existe na lista
         if (listaCompras.contains("Leite")) {
-            System.out.println("Este alimento está na lista");
+            System.out.println("O item 'Leite' está na lista");
+        } else {
+            System.out.println("O item 'Leite' não foi encontrado");
         }
-        else {
-            System.out.println("Alimento não escontrado");
+    }
+
+    // Método auxiliar para exibir a lista numerada
+    public static void exibirLista(List<String> lista) {
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.println((i + 1) + " - " + lista.get(i));
         }
     }
 }
