@@ -25,6 +25,9 @@ public class Main {
         int maxNumber = numbers.get(0);
         int minNumber = numbers.get(0);
 
+        int pares = 0;
+        int impares = 0;
+
         for (int i = 0; i < numbers.size(); i++) {
             int numAtual = numbers.get(i);
 
@@ -36,6 +39,12 @@ public class Main {
 
             if (numAtual < minNumber) {
                 minNumber = numAtual;
+            }
+
+            if (numAtual % 2 == 0) {
+                pares++;
+            } else {
+                impares++;
             }
         }
 
