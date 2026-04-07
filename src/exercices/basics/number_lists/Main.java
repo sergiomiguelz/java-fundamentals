@@ -21,22 +21,22 @@ public class Main {
         numbers.add(2);
 
 
-        // Soma todos os elementos do array
         int soma = 0;
-        for (int number : numbers) {
-            soma += number;
-        }
-
-        // Logica para maior e menor numero
         int maxNumber = numbers.get(0);
         int minNumber = numbers.get(0);
+
         for (int i = 0; i < numbers.size(); i++) {
             int numAtual = numbers.get(i);
 
-            if (numAtual > maxNumber)
-                maxNumber = numAtual;// Atualiza maior
-            if (numAtual < minNumber)
-                minNumber = numAtual; // Atualiza menor
+            soma += numAtual;
+
+            if (numAtual > maxNumber) {
+                maxNumber = numAtual;
+            }
+
+            if (numAtual < minNumber) {
+                minNumber = numAtual;
+            }
         }
 
 
