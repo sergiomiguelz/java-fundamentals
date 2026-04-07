@@ -48,8 +48,11 @@ public class Main {
             }
         }
 
-
-        System.out.println("Maior numero: " + maxNumber + "\nMenor numero: " + minNumber);
-        System.out.println(soma);
+        System.out.println("Lista: " + numbers);
+        System.out.println("Soma: " + soma);
+        System.out.println("Maior número: " + maxNumber);
+        System.out.println("Menor número: " + minNumber);
+        System.out.println("Pares: " + pares);
+        System.out.println("Ímpares: " + impares);
     }
 }
