@@ -1,8 +1,6 @@
 package exercices.basics.number_lists;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 /*
@@ -15,7 +13,6 @@ public class Main {
     public static void main(String[] args) {
 
         List<Integer> numbers = new ArrayList<>();
-
         numbers.add(1);
         numbers.add(4);
         numbers.add(6);
@@ -23,8 +20,6 @@ public class Main {
         numbers.add(8);
         numbers.add(2);
 
-        // Organiza o array em numeros crescentes
-        numbers.sort(Comparator.naturalOrder());
 
         // Soma todos os elementos do array
         int soma = 0;
@@ -45,9 +40,7 @@ public class Main {
         }
 
 
-
         System.out.println("Maior numero: " + maxNumber + "\nMenor numero: " + minNumber);
         System.out.println(soma);
-        System.out.println(numbers);
     }
 }
