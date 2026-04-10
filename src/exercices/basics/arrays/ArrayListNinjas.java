@@ -16,6 +16,8 @@ public class ArrayListNinjas {
         ArrayNinjas.add("Kakashi");
         ArrayNinjas.add("Rock Lee");
 
+        System.out.println("=== RESULTADOS ===");
+
         // Percorrendo o ArrayList e imprimindo cada elemento
         System.out.println("Quantidade total de ninjas: " + ArrayNinjas.size());
         System.out.println("Lista de Ninjas: ");
