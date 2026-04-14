@@ -2,41 +2,44 @@ package exercices.basics.generics;
 
 /*
  * Objetivo:
- * Criar uma classe genérica simples que armazene um único valor (T)
- * e permita definir e recuperar esse valor.
+ * Criar uma classe genérica que possua um método para exibir
+ * o valor armazenado.
  */
 
-class Caixa<T>{
-    // Variavel generica
-    private T objeto;
+class Caixa<T> {
 
-    // Getters e setters
-    public T getObjeto() {
-        return objeto;
+    // Atributo genérico
+    private T valor;
+
+    // Getter
+    public T getValor() {
+        return valor;
     }
 
-    public void setObjeto(T objeto) {
-        this.objeto = objeto;
+    // Setter
+    public void setValor(T valor) {
+        this.valor = valor;
     }
 
-    public void showInfo(){
-        System.out.println(getObjeto());
+    // Método para exibir valor
+    public void showInfo() {
+        System.out.println(valor);
     }
 }
 
 
 
-public class ListaGenerica2 {
-    public static void main (String[] args){
+public class CaixaGeneric {
+    public static void main(String[] args) {
 
-        // Testando a lista com String
+        // Testando com String
         Caixa<String> caixaTexto = new Caixa<>();
-        caixaTexto.setObjeto("Calculadora");
+        caixaTexto.setValor("Calculadora");
+        caixaTexto.exibir();
 
-        // Testando a lista n's inteiros
+        // Testando com Integer
         Caixa<Integer> caixaNumero = new Caixa<>();
-        caixaNumero.setObjeto(10);
+        caixaNumero.setValor(10);
         caixaNumero.showInfo();
     }
-
 }
