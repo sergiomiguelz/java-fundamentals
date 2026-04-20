@@ -2,8 +2,7 @@ package exercices.basics.generics;
 
 /*
  * Objetivo:
- * Criar uma classe genérica que possua um método para exibir
- * o valor armazenado.
+ * Criar uma classe genérica que possua um método para exibir o valor armazenado.
  */
 
 class Caixa<T> {
@@ -35,7 +34,7 @@ public class CaixaGeneric {
         // Testando com String
         Caixa<String> caixaTexto = new Caixa<>();
         caixaTexto.setValor("Calculadora");
-        caixaTexto.exibir();
+        caixaTexto.showInfo();
 
         // Testando com Integer
         Caixa<Integer> caixaNumero = new Caixa<>();
