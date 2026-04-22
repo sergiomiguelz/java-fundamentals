@@ -1,4 +1,5 @@
 package exercices.basics.stack;
+
 import java.util.Stack;
 
 /*
@@ -17,25 +18,19 @@ public class SimuladorNavegador {
         sitesAcessados.push("www.google.com");
         sitesAcessados.push("www.youtube.com");
         sitesAcessados.push("www.github.com");
+        sitesAcessados.push("www.zara.com");
+        sitesAcessados.push("www.instagram.com");
 
-        // Verificando se a stack é vazia
-        if (sitesAcessados.isEmpty()) {
-            System.out.println("Nenhum navegador aberto.");
+        // Percorrendo os sites por ordem de abertura
+        for (String site : sitesAcessados) {
+            System.out.println("Visitando: " + site);
         }
-        else {
-            // Acessando os elementos por índice
-            System.out.println("Visitando: " + sitesAcessados.get(0));
-            System.out.println("Visitando: " + sitesAcessados.get(1));
-            System.out.println("Visitando: " + sitesAcessados.peek() + "\n");
 
-            // Fechando o site atual
-            System.out.println("Voltando...");
-            System.out.println("Você fechou: " + sitesAcessados.peek());
-            sitesAcessados.peek();
-            sitesAcessados.pop();
+        // Fechando o site atual
+        System.out.println("\nVoltando...");
+        System.out.println("Você fechou: " + sitesAcessados.pop());
 
-            // Retornando para o site anterior
-            System.out.println("Você voltou para: " + sitesAcessados.peek());
-        }
+        // Retornando para o site anterior
+        System.out.println("Você voltou para: " + sitesAcessados.peek());
     }
 }
