@@ -21,16 +21,32 @@ public class SimuladorNavegador {
         sitesAcessados.push("www.zara.com");
         sitesAcessados.push("www.instagram.com");
 
-        // Percorrendo os sites por ordem de abertura
+        // Stack auxiliar para exibir sem destruir a original
+        Stack<String> copia = new Stack<>();
+
+        // Copiando os elementos
         for (String site : sitesAcessados) {
-            System.out.println("Visitando: " + site);
+            copia.push(site);
         }
 
-        // Fechando o site atual
+        // Exibindo histórico (LIFO)
+        System.out.println("\nHistórico (mais recente → mais antigo):");
+        while (!copia.isEmpty()) {
+            System.out.println(copia.pop());
+        }
+
+        // Mostrando site atual (topo)
+        System.out.println("\nSite atual: " + sitesAcessados.peek());
+
+        // Simulando voltar
         System.out.println("\nVoltando...");
         System.out.println("Você fechou: " + sitesAcessados.pop());
 
-        // Retornando para o site anterior
-        System.out.println("Você voltou para: " + sitesAcessados.peek());
+        // Novo topo após voltar
+        if (!sitesAcessados.isEmpty()) {
+            System.out.println("Você voltou para: " + sitesAcessados.peek());
+        } else {
+            System.out.println("Nenhum site aberto.");
+        }
     }
 }
