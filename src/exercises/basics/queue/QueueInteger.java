@@ -12,7 +12,7 @@ import java.util.Queue;
 public class QueueInteger {
     public static void main(String[] args) {
 
-        // Instanciando a Queue
+        // Instanciando a fila (Queue)
         Queue<Integer> filaInteiros = new LinkedList<>();
 
         // Adicionando elementos
@@ -20,10 +20,16 @@ public class QueueInteger {
         filaInteiros.add(5);
         filaInteiros.add(7);
         filaInteiros.add(1);
+        filaInteiros.add(0);
 
         // Removendo elementos em ordem FIFO
+        System.out.println("Removendo: ");
+        int posicao = 1;
+
         while (!filaInteiros.isEmpty()) {
-            System.out.println(filaInteiros.poll());
+            int removido = filaInteiros.poll();
+            System.out.printf("%d° Elemento removido: %d\n", posicao, removido);
+            posicao++;
         }
     }
 }
