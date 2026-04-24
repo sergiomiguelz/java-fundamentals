@@ -1,6 +1,8 @@
 package exercises.basics.queue;
 
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 /*
@@ -14,12 +16,10 @@ public class QueueStringVisualizador {
 
         // Cria a fila
         Queue<String> fila = new LinkedList<>();
+        List<String> elementos = List.of("Elemento 1", "Elemento 2", "Elemento 3", "Elemento 4", "Elemento 5");
 
         // Adiciona elementos
-        fila.add("Elemento 1");
-        fila.add("Elemento 2");
-        fila.add("Elemento 3");
-        fila.add("Elemento 4");
+        fila.addAll(elementos);
 
         // Exibe informações da fila
         System.out.println("Fila completa: " + fila);
