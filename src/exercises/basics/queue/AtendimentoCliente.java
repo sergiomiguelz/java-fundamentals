@@ -30,8 +30,5 @@ public class AtendimentoCliente {
 
         // Cliente a ser atendido
         System.out.println("Próximo cliente: " + filaClientes.peek());
-
-
-
     }
 }
