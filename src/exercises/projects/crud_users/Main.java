@@ -6,6 +6,19 @@ import java.util.Scanner;
 // Classe principal responsável pela interação com o usuário
 public class Main {
 
+    // Método auxiliar para leitura segura de ID
+    private static int lerId(Scanner scanner) {
+
+        while (true) {
+            try {
+                return Integer.parseInt(scanner.nextLine());
+
+            } catch (NumberFormatException e) {
+                System.out.print("ID inválido. Digite apenas números: ");
+            }
+        }
+    }
+
     public static void main(String[] args) {
 
         // Scanner responsável por ler entradas do console
@@ -87,7 +100,7 @@ public class Main {
                     System.out.println("\n--------- Buscar usuário por id ---------");
 
                     System.out.print("Digite o ID: ");
-                    input_id = Integer.parseInt(scanner.nextLine());
+                    input_id = lerId(scanner);
 
                     Usuario usuarioEncontrado = usuarioService.buscarPorId(input_id);
 
@@ -106,7 +119,7 @@ public class Main {
                     System.out.println("\n--------- Atualizar usuário ---------");
 
                     System.out.print("Digite o ID do usuário que você deseja atualizar: ");
-                    input_id = Integer.parseInt(scanner.nextLine());
+                    input_id = lerId(scanner);
 
                     Usuario usuarioParaAtualizar = usuarioService.buscarPorId(input_id);
 
@@ -137,7 +150,7 @@ public class Main {
                     System.out.println("\n--------- Remover usuário ---------");
 
                     System.out.print("Digite o ID do usuário que você quer remover: ");
-                    input_id = Integer.parseInt(scanner.nextLine());
+                    input_id = lerId(scanner);
 
                     Usuario usuarioParaRemover = usuarioService.buscarPorId(input_id);
 
