@@ -1,4 +1,4 @@
-package exercises.challanges.system_ninja;
+package exercises.challenges.system_ninja;
 
 public class Ninja {
     // Ninja data

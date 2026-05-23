@@ -1,4 +1,4 @@
-package exercises.challanges.login_user;
+package exercises.challenges.login_user;
 
 public class Main {
     public static void main(String[] args) {

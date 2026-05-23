@@ -1,4 +1,4 @@
-package exercises.challanges.lista_ninjas;
+package exercises.challenges.lista_ninjas;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package exercises.challanges.system_tecbussines;
+package exercises.challenges.system_tecbussines;
 
 public enum JobTitle {
     Manager,    // Manager (Gerente)

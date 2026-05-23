@@ -1,4 +1,4 @@
-package exercises.challanges.warrior_battle;
+package exercises.challenges.warrior_battle;
 
 public class Warrior {
     String name;

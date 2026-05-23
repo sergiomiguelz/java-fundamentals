@@ -1,4 +1,4 @@
-package exercises.challanges.login_user;
+package exercises.challenges.login_user;
 
 import java.util.Scanner;
 
