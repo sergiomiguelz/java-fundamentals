@@ -1,4 +1,4 @@
-package exercises.projects.crud_users;
+package projects.crud_users;
 
 // Classe modelo que representa um usuário do sistema
 public class Usuario {

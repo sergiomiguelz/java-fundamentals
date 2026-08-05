@@ -1,4 +1,4 @@
-package exercises.projects.crud_users;
+package projects.crud_users;
 
 import java.util.ArrayList;
 
