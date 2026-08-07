@@ -1,14 +1,24 @@
 package exercises.basics.enums.DifficultyLevel;
 
+/*
+ * Objetivo:
+ * Praticar o uso de enum como atributo de uma classe.
+ */
 public class Main {
+
     public static void main(String[] args) {
 
-        DifficultyLevel level = DifficultyLevel.MEDIUM;
+        // Cria um jogador inicialmente na dificuldade HARD
+        Player player1 = new Player("Pedro", DifficultyLevel.HARD);
 
-        switch (level){
-            case EASY -> System.out.println("Inimigos possuem 50 de vida.");
-            case MEDIUM -> System.out.println("Inimigos possuem 100 de vida.");
-            case HARD -> System.out.println("Inimigos possuem 200 de vida.");
-        }
+        System.out.println("=== PLAYER ===");
+        System.out.println(player1);
+
+        // Altera a dificuldade do jogador
+        player1.setDifficulty(DifficultyLevel.MEDIUM);
+
+        // Exibe novamente para confirmar a alteração
+        System.out.println("\n=== UPDATED PLAYER ===");
+        System.out.println(player1);
     }
 }
